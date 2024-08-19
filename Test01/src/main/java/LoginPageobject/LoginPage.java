@@ -1,35 +1,39 @@
 package LoginPageobject;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.Reporter;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 
-import SeleiumBase.Basic;
-
-public class LoginPage extends Basic
+public class LoginPage
 {
 
-	public LoginPage(RemoteWebDriver driver)
-	{
-		this.driver = driver;
-		
-	}
+	
+	//@FindBy(how = How.ID,using="username")
+	public static WebElement username;
+	
+	//@FindBy(id="password")
+	public static WebElement password;
+	
+	//@FindBy(xpath = "//button[@id='submit']")
+	public static WebElement submit;
 
-	public LoginPage username(String username)
-	{
-		driver.findElement(By.id("username")).sendKeys(username);;
-		return this;
-	}
-	public  LoginPage password(String password)
-	{
-		driver.findElement(By.id("password")).sendKeys(password);;
-		return this;
-	}
-	public LogoutPage submit() 
-	{
-		driver.findElement(By.xpath("//button[@id='submit']")).click();
-		return new LogoutPage(driver);
-	}
+	
+
+//	public LoginPage username(String username)
+//	{
+//		driver.findElement(By.id("username")).sendKeys(username);;
+//		return this;
+//	}
+//	public  LoginPage password(String password)
+//	{
+//		driver.findElement(By.id("password")).sendKeys(password);;
+//		return this;
+//	}
+//	public LogoutPage submit() 
+//	{
+//		driver.findElement(By.xpath("//button[@id='submit']")).click();
+//		return new LogoutPage(driver);
+//	}
 }
 
 

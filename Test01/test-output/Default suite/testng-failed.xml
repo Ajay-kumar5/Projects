@@ -5,8 +5,11 @@
     <classes>
       <class name="LoginPgaeTest.T01Login">
         <methods>
+          <include name="Logoutcomform"/>
           <include name="starup"/>
           <include name="Logout"/>
+          <include name="Login"/>
+          <include name="Menu"/>
           <include name="clear"/>
         </methods>
       </class> <!-- LoginPgaeTest.T01Login -->

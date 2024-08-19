@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Test Login | Practice Test Automation]]>
@@ -11,41 +11,102 @@
       <![CDATA[Test Login | Practice Test Automation]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-08-18T19:25:39 IST" name="Default suite" finished-at="2024-08-18T19:25:53 IST" duration-ms="14038">
+  <suite started-at="2024-08-19T17:43:06 IST" name="Suite" finished-at="2024-08-19T17:43:22 IST" duration-ms="16470">
     <groups>
+      <group name="Smoke">
+        <method signature="T01Login.Login(java.lang.String,java.lang.String)[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" name="Login" class="LoginPgaeTest.T01Login"/>
+        <method signature="T01Login.Logout()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" name="Logout" class="LoginPgaeTest.T01Login"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-08-18T19:25:39 IST" name="Default test" finished-at="2024-08-18T19:25:53 IST" duration-ms="14038">
+    <test started-at="2024-08-19T17:43:06 IST" name="TestLoginPage" finished-at="2024-08-19T17:43:22 IST" duration-ms="16470">
       <class name="LoginPgaeTest.T01Login">
-        <test-method is-config="true" signature="starup()[pri:0, instance:LoginPgaeTest.T01Login@44d70181]" started-at="2024-08-18T19:25:39 IST" name="starup" finished-at="2024-08-18T19:25:48 IST" duration-ms="8351" status="PASS">
+        <test-method is-config="true" signature="starup()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-08-19T17:43:06 IST" name="starup" finished-at="2024-08-19T17:43:12 IST" duration-ms="6844" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- starup -->
-        <test-method signature="Login()[pri:0, instance:LoginPgaeTest.T01Login@44d70181]" started-at="2024-08-18T19:25:48 IST" name="Login" finished-at="2024-08-18T19:25:52 IST" duration-ms="3900" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-08-19T17:43:13 IST" name="Login" finished-at="2024-08-19T17:43:17 IST" duration-ms="4636" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[student]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[Test Login | Practice Test Automation]]>
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Logout()[pri:0, instance:LoginPgaeTest.T01Login@44d70181]" started-at="2024-08-18T19:25:52 IST" name="Logout" finished-at="2024-08-18T19:25:53 IST" duration-ms="1319" status="PASS">
+        <test-method signature="Logout()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-08-19T17:43:17 IST" name="Logout" finished-at="2024-08-19T17:43:19 IST" duration-ms="2246" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged In Successfully | Practice Test Automation]]>
             </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method signature="Logoutcomform()[pri:0, instance:LoginPgaeTest.T01Login@44d70181]" started-at="2024-08-18T19:25:53 IST" name="Logoutcomform" finished-at="2024-08-18T19:25:53 IST" duration-ms="21" status="PASS">
+        <test-method signature="Logoutcomform()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-08-19T17:43:19 IST" name="Logoutcomform" finished-at="2024-08-19T17:43:19 IST" duration-ms="19" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Login | Practice Test Automation]]>
             </line>
           </reporter-output>
         </test-method> <!-- Logoutcomform -->
-        <test-method is-config="true" signature="clear()[pri:0, instance:LoginPgaeTest.T01Login@44d70181]" started-at="2024-08-18T19:25:53 IST" name="clear" finished-at="2024-08-18T19:25:53 IST" duration-ms="311" status="PASS">
+        <test-method signature="Menu()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-08-19T17:43:19 IST" name="Menu" finished-at="2024-08-19T17:43:22 IST" duration-ms="2458" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[click Home button  expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: click Home button  expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at LoginPgaeTest.T01Login.Menu(T01Login.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Menu -->
+        <test-method is-config="true" signature="clear()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-08-19T17:43:22 IST" name="clear" finished-at="2024-08-19T17:43:22 IST" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clear -->
       </class> <!-- LoginPgaeTest.T01Login -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- TestLoginPage -->
+  </suite> <!-- Suite -->
 </testng-results>
