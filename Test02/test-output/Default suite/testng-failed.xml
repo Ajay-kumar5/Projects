@@ -5,9 +5,12 @@
     <classes>
       <class name="FormTest.Testform">
         <methods>
-          <include name="starup"/>
-          <include name="successdisplay"/>
+          <include name="start"/>
           <include name="clear"/>
+          <include name="main" invocation-numbers="0"/>
+          <include name="successdisplay"/>
+          <include name="form" invocation-numbers="0"/>
+          <include name="submit"/>
         </methods>
       </class> <!-- FormTest.Testform -->
     </classes>

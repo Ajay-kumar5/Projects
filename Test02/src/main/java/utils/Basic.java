@@ -1,21 +1,54 @@
 package utils;
 
+import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Date;
 
-import org.apache.poi.ss.usermodel.DataFormat;
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
-public class T02 
+public class Basic
 {
 	
+	
+	static String urls = "https://demo.wpeverest.com/user-registration/form-3/";
+
+	public static WebDriver driver;
+		
+	static
+		{
+			System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Driver\\128\\chromedriver.exe");
+			driver = new ChromeDriver();
+		
+			driver.manage().window().maximize();
+			
+			driver.get(urls);
+
+		}
+		
+		
+	public void screenshot(String screenshotname) throws IOException
+		{
+			Date d = new Date();
+			
+			String time = d.toString().replace(":","_").replace(" ","_"); 
+
+			File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(src,new File("D:\\screenshot\\"+screenshotname+"_"+time+".PNG"));
+		}
+			
+		
 	public static String[][] Read() throws IOException
-	{
+		{
 		
 		FileInputStream file = new FileInputStream("./Data/Test02.xlsx");
 		
