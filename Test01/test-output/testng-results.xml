@@ -10,21 +10,33 @@
     <line>
       <![CDATA[Test Login | Practice Test Automation]]>
     </line>
+    <line>
+      <![CDATA[Homepage url: Practice Test Automation | Learn Selenium WebDriver]]>
+    </line>
+    <line>
+      <![CDATA[Practicepage url: Practice | Practice Test Automation]]>
+    </line>
+    <line>
+      <![CDATA[Coursespage url: Courses | Practice Test Automation]]>
+    </line>
+    <line>
+      <![CDATA[Blogpage url: Blog | Practice Test Automation]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-08-19T17:43:06 IST" name="Suite" finished-at="2024-08-19T17:43:22 IST" duration-ms="16470">
+  <suite started-at="2024-09-11T16:17:51 IST" name="Suite" finished-at="2024-09-11T16:18:31 IST" duration-ms="40544">
     <groups>
       <group name="Smoke">
         <method signature="T01Login.Login(java.lang.String,java.lang.String)[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" name="Login" class="LoginPgaeTest.T01Login"/>
         <method signature="T01Login.Logout()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" name="Logout" class="LoginPgaeTest.T01Login"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-08-19T17:43:06 IST" name="TestLoginPage" finished-at="2024-08-19T17:43:22 IST" duration-ms="16470">
+    <test started-at="2024-09-11T16:17:51 IST" name="TestLoginPage" finished-at="2024-09-11T16:18:31 IST" duration-ms="40544">
       <class name="LoginPgaeTest.T01Login">
-        <test-method is-config="true" signature="starup()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-08-19T17:43:06 IST" name="starup" finished-at="2024-08-19T17:43:12 IST" duration-ms="6844" status="PASS">
+        <test-method is-config="true" signature="starup()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-09-11T16:17:51 IST" name="starup" finished-at="2024-09-11T16:17:58 IST" duration-ms="7157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- starup -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-08-19T17:43:13 IST" name="Login" finished-at="2024-08-19T17:43:17 IST" duration-ms="4636" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-09-11T16:17:58 IST" name="Login" finished-at="2024-09-11T16:18:00 IST" duration-ms="1532" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,31 +55,59 @@
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Logout()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-08-19T17:43:17 IST" name="Logout" finished-at="2024-08-19T17:43:19 IST" duration-ms="2246" status="PASS">
+        <test-method signature="Logout()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-09-11T16:18:00 IST" name="Logout" finished-at="2024-09-11T16:18:07 IST" duration-ms="7430" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged In Successfully | Practice Test Automation]]>
             </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method signature="Logoutcomform()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-08-19T17:43:19 IST" name="Logoutcomform" finished-at="2024-08-19T17:43:19 IST" duration-ms="19" status="PASS">
+        <test-method signature="Logoutcomform()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-09-11T16:18:07 IST" name="Logoutcomform" finished-at="2024-09-11T16:18:07 IST" duration-ms="22" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test Login | Practice Test Automation]]>
             </line>
           </reporter-output>
         </test-method> <!-- Logoutcomform -->
-        <test-method signature="Menu()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-08-19T17:43:19 IST" name="Menu" finished-at="2024-08-19T17:43:22 IST" duration-ms="2458" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="Menu()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-09-11T16:18:07 IST" name="Menu" finished-at="2024-09-11T16:18:31 IST" duration-ms="24095" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[click Home button  expected [true] but found [false]]]>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88d8ce56fea33378038a842021ae76ad, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54819}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54819/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 88d8ce56fea33378038a842021ae76ad]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: click Home button  expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at LoginPgaeTest.T01Login.Menu(T01Login.java:25)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88d8ce56fea33378038a842021ae76ad, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54819}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54819/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 88d8ce56fea33378038a842021ae76ad
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:302)
+at LoginPgaeTest.T01Login.Menu(T01Login.java:47)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -98,11 +138,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
+            <line>
+              <![CDATA[Homepage url: Practice Test Automation | Learn Selenium WebDriver]]>
+            </line>
+            <line>
+              <![CDATA[Practicepage url: Practice | Practice Test Automation]]>
+            </line>
+            <line>
+              <![CDATA[Coursespage url: Courses | Practice Test Automation]]>
+            </line>
+            <line>
+              <![CDATA[Blogpage url: Blog | Practice Test Automation]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Menu -->
-        <test-method is-config="true" signature="clear()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-08-19T17:43:22 IST" name="clear" finished-at="2024-08-19T17:43:22 IST" duration-ms="166" status="PASS">
+        <test-method is-config="true" signature="clear()[pri:0, instance:LoginPgaeTest.T01Login@3f191845]" started-at="2024-09-11T16:18:31 IST" name="clear" finished-at="2024-09-11T16:18:31 IST" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clear -->

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 19 17:43:06 IST 2024</td>
+<td>Started on:</td><td>Wed Sep 11 16:17:51 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16470 ms)</td>
+<tr><td>Total time:</td><td>40 seconds (40544 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,64 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='LoginPgaeTest.T01Login.Menu()'><b>Menu</b><br>Test class: LoginPgaeTest.T01Login</td>
-<td><div><pre>java.lang.AssertionError: click Home button  expected [true] but found [false]
-	at LoginPgaeTest.T01Login.Menu(T01Login.java:25)
+<td title='LoginPgaeTest.T01Login.Menu()'><b>Menu</b><br>Test class: LoginPgaeTest.T01Login<br/>
+<a href="#Output-820422499" onClick='toggleBox("Output-820422499", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-820422499" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-820422499">
+Homepage url: Practice Test Automation | Learn Selenium WebDriver<br/>
+Practicepage url: Practice | Practice Test Automation<br/>
+Coursespage url: Courses | Practice Test Automation<br/>
+Blogpage url: Blog | Practice Test Automation<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88d8ce56fea33378038a842021ae76ad, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54819}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54819/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 88d8ce56fea33378038a842021ae76ad
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:302)
+	at LoginPgaeTest.T01Login.Menu(T01Login.java:47)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace837946527", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace837946527'><pre>java.lang.AssertionError: click Home button  expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at LoginPgaeTest.T01Login.Menu(T01Login.java:25)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace820422499", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace820422499'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [88d8ce56fea33378038a842021ae76ad, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54819}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54819/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 88d8ce56fea33378038a842021ae76ad
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:302)
+	at LoginPgaeTest.T01Login.Menu(T01Login.java:47)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -115,7 +163,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>2</td>
+<td>24</td>
 <td>LoginPgaeTest.T01Login@3f191845</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -128,39 +176,39 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='LoginPgaeTest.T01Login.Logout()'><b>Logout</b><br>Test class: LoginPgaeTest.T01Login<br/>
-<a href="#Output-1713129148" onClick='toggleBox("Output-1713129148", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1894978338" onClick='toggleBox("Output-1894978338", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1713129148" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1713129148">
+<a href="#Output-1894978338" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1894978338">
 Logged In Successfully | Practice Test Automation<br/>
 </div>
 </td>
 <td></td>
-<td>2</td>
+<td>7</td>
+<td>LoginPgaeTest.T01Login@3f191845</td></tr>
+<tr>
+<td title='LoginPgaeTest.T01Login.Login()'><b>Login</b><br>Test class: LoginPgaeTest.T01Login<br>Parameters: student, Password123<br/>
+<a href="#Output-987950392" onClick='toggleBox("Output-987950392", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-987950392" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-987950392">
+Test Login | Practice Test Automation<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
 <td>LoginPgaeTest.T01Login@3f191845</td></tr>
 <tr>
 <td title='LoginPgaeTest.T01Login.Logoutcomform()'><b>Logoutcomform</b><br>Test class: LoginPgaeTest.T01Login<br/>
-<a href="#Output-931548023" onClick='toggleBox("Output-931548023", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1058921154" onClick='toggleBox("Output-1058921154", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-931548023" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-931548023">
+<a href="#Output-1058921154" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1058921154">
 Test Login | Practice Test Automation<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>LoginPgaeTest.T01Login@3f191845</td></tr>
-<tr>
-<td title='LoginPgaeTest.T01Login.Login()'><b>Login</b><br>Test class: LoginPgaeTest.T01Login<br>Parameters: student, Password123<br/>
-<a href="#Output-313869647" onClick='toggleBox("Output-313869647", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-313869647" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-313869647">
-Test Login | Practice Test Automation<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
 <td>LoginPgaeTest.T01Login@3f191845</td></tr>
 </table><p>
 </body>

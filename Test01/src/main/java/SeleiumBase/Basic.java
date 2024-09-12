@@ -17,7 +17,7 @@ public class Basic
 	@BeforeClass
 	public void starup()
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Driver\\126\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Driver\\128\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
