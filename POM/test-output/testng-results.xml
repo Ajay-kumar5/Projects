@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[https://www.saucedemo.com/]]>
+    </line>
+    <line>
+      <![CDATA[https://www.saucedemo.com/inventory.html]]>
+    </line>
+    <line>
+      <![CDATA[https://www.saucedemo.com/inventory.html]]>
+    </line>
+    <line>
+      <![CDATA[https://www.saucedemo.com/cart.html]]>
+    </line>
+    <line>
+      <![CDATA[https://www.saucedemo.com/checkout-step-one.html]]>
+    </line>
+    <line>
+      <![CDATA[https://www.saucedemo.com/checkout-step-two.html]]>
+    </line>
+    <line>
+      <![CDATA[https://www.saucedemo.com/checkout-step-two.html]]>
+    </line>
+    <line>
+      <![CDATA[https://www.saucedemo.com/checkout-complete.html]]>
+    </line>
+    <line>
+      <![CDATA[https://www.saucedemo.com/checkout-complete.html]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-09-15T16:22:00 IST" name="Suite" finished-at="2024-09-15T16:22:25 IST" duration-ms="25138">
+    <groups>
+      <group name="Smoke">
+        <method signature="Test1.Login()[pri:1, instance:Test.Test1@235ecd9f]" name="Login" class="Test.Test1"/>
+        <method signature="Test1.Home()[pri:2, instance:Test.Test1@235ecd9f]" name="Home" class="Test.Test1"/>
+        <method signature="Test1.card()[pri:3, instance:Test.Test1@235ecd9f]" name="card" class="Test.Test1"/>
+        <method signature="Test1.userdetails()[pri:4, instance:Test.Test1@235ecd9f]" name="userdetails" class="Test.Test1"/>
+        <method signature="Test1.orderplaced()[pri:5, instance:Test.Test1@235ecd9f]" name="orderplaced" class="Test.Test1"/>
+        <method signature="Test1.Logout()[pri:6, instance:Test.Test1@235ecd9f]" name="Logout" class="Test.Test1"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2024-09-15T16:22:00 IST" name="Test" finished-at="2024-09-15T16:22:25 IST" duration-ms="25138">
+      <class name="Test.Test1">
+        <test-method is-config="true" signature="Broswersetup(java.lang.String)[pri:0, instance:Test.Test1@235ecd9f]" started-at="2024-09-15T16:22:00 IST" name="Broswersetup" finished-at="2024-09-15T16:22:16 IST" duration-ms="15477" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Broswersetup -->
+        <test-method is-config="true" signature="Intputdata()[pri:0, instance:Test.Test1@235ecd9f]" started-at="2024-09-15T16:22:16 IST" name="Intputdata" finished-at="2024-09-15T16:22:16 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Intputdata -->
+        <test-method signature="Login()[pri:1, instance:Test.Test1@235ecd9f]" started-at="2024-09-15T16:22:16 IST" name="Login" finished-at="2024-09-15T16:22:16 IST" duration-ms="715" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[https://www.saucedemo.com/]]>
+            </line>
+            <line>
+              <![CDATA[https://www.saucedemo.com/inventory.html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Home()[pri:2, instance:Test.Test1@235ecd9f]" started-at="2024-09-15T16:22:16 IST" name="Home" finished-at="2024-09-15T16:22:17 IST" duration-ms="669" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[https://www.saucedemo.com/inventory.html]]>
+            </line>
+            <line>
+              <![CDATA[https://www.saucedemo.com/cart.html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Home -->
+        <test-method signature="card()[pri:3, instance:Test.Test1@235ecd9f]" started-at="2024-09-15T16:22:17 IST" name="card" finished-at="2024-09-15T16:22:17 IST" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- card -->
+        <test-method signature="userdetails()[pri:4, instance:Test.Test1@235ecd9f]" started-at="2024-09-15T16:22:17 IST" name="userdetails" finished-at="2024-09-15T16:22:18 IST" duration-ms="573" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[https://www.saucedemo.com/checkout-step-one.html]]>
+            </line>
+            <line>
+              <![CDATA[https://www.saucedemo.com/checkout-step-two.html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userdetails -->
+        <test-method signature="orderplaced()[pri:5, instance:Test.Test1@235ecd9f]" started-at="2024-09-15T16:22:18 IST" name="orderplaced" finished-at="2024-09-15T16:22:18 IST" duration-ms="118" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[https://www.saucedemo.com/checkout-step-two.html]]>
+            </line>
+            <line>
+              <![CDATA[https://www.saucedemo.com/checkout-complete.html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- orderplaced -->
+        <test-method signature="Logout()[pri:6, instance:Test.Test1@235ecd9f]" started-at="2024-09-15T16:22:18 IST" name="Logout" finished-at="2024-09-15T16:22:25 IST" duration-ms="6826" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[https://www.saucedemo.com/checkout-complete.html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:Test.Test1@235ecd9f]" started-at="2024-09-15T16:22:25 IST" name="closebroswer" finished-at="2024-09-15T16:22:25 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+      </class> <!-- Test.Test1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
