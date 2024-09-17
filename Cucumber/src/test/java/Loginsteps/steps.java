@@ -8,26 +8,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
+import Driver.Driverinstance;
 import io.cucumber.java.en.But;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class steps 
+public class steps extends Driverinstance
 {
 	
-	public static WebDriver driver;
+	//public static WebDriver driver;
 	
-//	@Given("user should naviagate to the application")
-//	public void login()
-//	{
-//		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Driver\\128\\chromedriver.exe");
-//		driver = new ChromeDriver();
-//		driver.manage().window().maximize();
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-//		driver.get("https://www.saucedemo.com");
-//		
-//	}
+
 	
 	
 //	@Given("User should enter the username as standard_user")
@@ -56,7 +48,7 @@ public class steps
 	{
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
-		driver.quit();
+		//driver.quit();
 
 	}
 	
@@ -86,6 +78,8 @@ public class steps
 		System.out.println(Expected);
 		
 		Assert.assertEquals(Expected,"Epic sadface: Username and password do not match any user in this service");
+		//driver.quit();
+
 	}
 
 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="59.936" tests="6" skipped="0" failures="0" errors="0">
+<testcase classname="saucedemo application Demo" name="User should able to add Product in Card - #1.1" time="14.502">
+<system-out><![CDATA[
+And User Should entre "standard_user" and "secret_sauce"....................passed
+And Click Add to card button................................................passed
+Then Card count should be updated...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="saucedemo application Demo" name="User should able to add Product in Card - #1.2" time="6.169">
+<system-out><![CDATA[
+And User Should entre "standard_user" and "secret_sauce"....................passed
+And Click Add to card button................................................passed
+Then Card count should be updated...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="saucedemo application Demo" name="User should able to add Product in Card - #2.1" time="8.328">
+<system-out><![CDATA[
+And User Should entre "standard_user" and "secret_sauce"....................passed
+And Click Add to card button................................................passed
+Then Card count should be updated...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="saucedemo application Demo" name="User should able to add Product in Card - #2.2" time="17.332">
+<system-out><![CDATA[
+And User Should entre "standard_user" and "secret_sauce"....................passed
+And Click Add to card button................................................passed
+Then Card count should be updated...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="saucedemo application Demo" name="Login should be success" time="5.922">
+<system-out><![CDATA[
+And User should enter the username as "standard_user".......................passed
+And User should enter the password as "secret_sauce"........................passed
+When User click on login button.............................................passed
+Then login should be success................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="saucedemo application Demo" name="Login should be Fail" time="7.267">
+<system-out><![CDATA[
+And User should enter the username as "Teacher_user"........................passed
+And User should enter the password as "Password"............................passed
+When User click on login button.............................................passed
+But login should be fail....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
